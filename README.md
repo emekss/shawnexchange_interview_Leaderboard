@@ -1,16 +1,46 @@
-# shawnexchange_interview_app
+# Emeka's Leaderboard App
 
-A new Flutter project.
+## Overview
+Dynamic Flutter leaderboard app with real-time score updates and a sleek, minimalist design.
 
-## Getting Started
+## Key Features
+- 1-second splash screen
+- Periodic score updates
+- Automatic participant reordering
+- Top participant highlight
+- **New**: Leaderboard reset functionality
 
-This project is a starting point for a Flutter application.
+## Design Decisions
 
-A few resources to get you started if this is your first Flutter project:
+### UI/UX
+- Gradient black-to-purple background for visual depth
+- Minimalist black and white color scheme
+- Ranking-based color coding:
+  - Top 3 participants highlighted with distinct colors
+  - Score colors indicate ranking prominence
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Technical Implementation
+- State management via `setState()`
+- Periodic timer for automatic score updates
+- Dynamic sorting of participants
+- Deep copy mechanism for leaderboard reset
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Quick Setup
+```bash
+flutter pub get
+flutter run
+```
+
+## Usage
+- App auto-updates scores every 2 seconds
+- Tap refresh icon to reset leaderboard to initial state
+
+## Requirements
+- Flutter SDK
+- Dart SDK
+
+## VIDEO OF APP
+
+https://github.com/user-attachments/assets/dd1d380f-58cf-4862-bb70-9ccbb61bfba2
+
+
